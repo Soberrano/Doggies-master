@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html ng-app="webApp">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Приложение</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    @Styles.Render("~/Content/css")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <base href="/" />
+</head>
+<body class="skin-blue-light layout-top-nav">
+    <div id="web-app" class="wrapper">
+        <div class="content-wrapper">
+            <div id="page" class="container" ng-view></div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/assets")
+    @Scripts.Render("~/bundles/applications")
+</body>
+</html>
